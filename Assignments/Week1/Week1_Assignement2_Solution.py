@@ -84,20 +84,23 @@ print(f"you got {discount:.2f}% as discount\n your final bill is {billed_amount}
 
 '''Q6. Ask 4 numbers from user. Make sure all the numbers entered by user are dierent. Print which number is the smallest.'''
 
-num1=int(input("enter num1= "))
-num2=int(input("enter num1= "))
-num3=int(input("enter num1= "))
-num4=int(input("enter num1= "))
+# If you are using multiple AND conditions that is also OK
 
-smallest_no=num1
+num1: int = int(input("Enter number 1: "))
+num2: int = int(input("Enter number 2: "))
+num3: int = int(input("Enter number 3: "))
+num4: int = int(input("Enter number 4: "))
 
-if num1>num2: 
-    smallest_no=num2
-elif smallest_no>num3: 
-    smallest_no=num3
-elif smallest_no>num4: 
-    smallest_no=num4
-print(f"smallest number is {smallest_no}")
+smallest = num1
+
+if num2 < smallest:
+    smallest = num2
+if num3 < smallest:
+    smallest = num3
+if num4 < smallest:
+    smallest = num4
+
+print(f"The smallest number = {smallest}")
 
 '''Q7 Take Salary as input from User and Update the salary of an employee.
 salary less than 10,000, 5 % increment
