@@ -1,4 +1,7 @@
-def greet(name:str,age:int=0,gender:str ='not known'):
-    print(f"name={name},age={age},gender={gender}")
 
-greet('Ankita',age=28)
+def checkOddEven(num1:int)-> bool: 
+    return num1%2==0
+    return False
+
+print(checkOddEven(2))
+print(checkOddEven(11))

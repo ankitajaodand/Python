@@ -2,28 +2,28 @@
 mini'''
 
 def findMinimum(num1:int,num2:int,num3:int):
-    small=num1
-    if small>num2: 
-        small=num2
-    if small > num3:
-        small=num3
-    return small 
+    if num1<= num2 and num1 <= num3:
+        print(f"{num1} is minimum") 
+    elif num2<=num3: 
+        print(f"{num2} is minimum") 
+    else: 
+        print(f"{num3} is minimum")       
     
-output=findMinimum(9,7,4) 
-print(output)   
+findMinimum(4,7,4) 
+
 
 
 
 def findMaximum(num1:int,num2:int,num3:int):
-    max=num1
-    if max<num2: 
-        max=num2
-    if max<num3:
-        max=num3
-    return max 
+    if num1>= num2 and num1 >= num3:
+        print(f"{num1} is Maximum") 
+    elif num2>=num3: 
+        print(f"{num2} is Maximum") 
+    else: 
+        print(f"{num3} is Maximum") 
     
-output=findMaximum(10,11,13) 
-print(output)   
+findMaximum(10,11,13) 
+
 
 
 '''Q2. Attempt the same leap year question (Week 1 - Assignment 2 - Q8) but using function. 
