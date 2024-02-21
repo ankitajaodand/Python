@@ -1,10 +1,25 @@
-def findMaximum(num1:int,num2:int,num3:int):
-    if num1>= num2 and num1 >= num3:
-        print(f"{num1} is Maximum") 
-    elif num2>=num3: 
-        print(f"{num2} is Maximum") 
-    else: 
-        print(f"{num3} is Maximum") 
-    
-findMaximum(10,11,13) 
 
+def calculateAverage(num1: int, num2: int, num3: int) -> float:
+    return (num1 + num2 + num3) / 3
+
+
+def isAverageGreaterOrEqual(average: float, fourth_number: int) -> bool:
+    return average >= fourth_number
+
+
+num1: int = int(input("Enter the first number: "))
+num2: int = int(input("Enter the second number: "))
+num3: int = int(input("Enter the third number: "))
+num4: int = int(input("Enter the fourth number: "))
+
+average_value: float = calculateAverage(num1, num2, num3)
+
+# Check if the average is greater than or equal to the fourth number
+result = isAverageGreaterOrEqual(average_value, num4)
+
+print(f"The average of {num1}, {num2}, and {num3} is: {average_value}")
+
+if result:
+    print(f"The average is greater than or equal to {num4}.")
+else:
+    print(f"The average is less than {num4}.")
