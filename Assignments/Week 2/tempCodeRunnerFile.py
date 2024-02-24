@@ -1,17 +1,27 @@
-def printPattern(number:int)->int:
-    if number > 0:
-        start = -number
-        end = number
-        while start <= end:
-            print(start, end=" ")
-            start += 1
+def factorsCount(n: int) -> int:
+    i = 1
+    count = 0
+    while i <= n:
+        if n % i == 0:
+            count += 1
+        i += 1
+    return count
+
+
+def isPrime(n: int) -> bool:
+    fc = factorsCount(n)
+    if fc == 2:
+        return True
     else:
-        start = -number  # 20
-        end = number  # -20
-        while start >= end:
-            print(start, end=" ")
-            start -= 1   
+        return False
 
 
-number: int = int(input("Enter a number = "))  # -20  
-printPattern(number)    
+i = 1
+n1 = int(input("Enter a number = "))  # 15
+count = 0
+while i <= n1:
+    if isPrime(i):
+        count += 1
+    i += 1
+
+print(f"Total prime numbers between 1 to {n1} = {count}")
