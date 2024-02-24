@@ -1,3 +1,5 @@
+'''Q10. Ask a number from user n1. From 1 to n1, print how many prime numbers are there.'''
+
 def factorsCount(n: int) -> int:
     i = 1
     count = 0
