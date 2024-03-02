@@ -1,3 +1,5 @@
+'''Q11. Create a function calculatePrime that accepts an List of Integers and print all the prime numbers in that list.'''
+
 def calculatePrime(lst): 
     for i in lst:
         j=2
@@ -13,3 +15,7 @@ def calculatePrime(lst):
 calculatePrime([5,7,8,9,11])
              
            
+
+
+
+

@@ -48,15 +48,11 @@ a.extend([[1,2,3,5]]) #double [] to add the list
 print(a) 
 
 #sort by default ascending 
-
-
 a=[30,20,40,1,2,3,4,5,6,100,200]
 a.sort() #changes in a itself
 print(a)
 
 #sort by default ascending for decending make reverse=True
-
-
 a=[30,20,40,1,2,3,4,5,6,100,200]
 a.sort(reverse=True) #changes in a itself
 print(a)
