@@ -3,7 +3,11 @@
 2.Datatypes of values can be different, it can be list as well another dict
 3.keys can be imutable only int,float tupple,string.......it cannot be list since its mutable
 4.values can be updated keys cannot
-5.Dictornary can be extended with new key value pair,order will be maintained and newly added key will be added at the end'''
+5.Dictornary can be extended with new key value pair,order will be maintained and newly added key will be added at the end
+6. It is mutatable
+7 to create empty dictionary 
+    1. a={}
+    2. b=dict() #this should be use so that we can differentiate it from set because set is also defined as {} without key value'''
 
 my_dict={"Ankita": 28, "Anirudh":78}
 print(my_dict)

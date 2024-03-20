@@ -25,7 +25,8 @@ for age in my_dict.values():
 
 #method 4 Unpacking
 my_dict={"Ankita": 28, "Anirudh":78,"Akul":10}
-print(my_dict.items())  #list if tupples
+print(my_dict.items())  #oustside list inside tupples
+'''List of multiple tupples with key value can be converted to dict(list(tupples))'''
 
 for i in my_dict.items():
     print(i) #prints k value pair in tupples

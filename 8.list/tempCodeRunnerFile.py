@@ -1,7 +1,10 @@
 
+a=input("enter numbers'")
 
-a,*b,c =1,2,3,4,5,6
+x,y,z,a=list(map(int,a.split()))
+print(x,y,z,a)
 
-print(a)
-print(b)
-print(c)
+#single line
+a,b,c,d=list(map(int,input("enter 4 numbers ").split()))
+print(a,b,c,d)
+
