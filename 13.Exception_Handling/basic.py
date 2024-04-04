@@ -10,6 +10,8 @@ division by zero : This is message of an error
 Try ane Except block : if try is written except is mandatory 
 It helps for smooth execution with faling
 
+If Try except is wrotten, This exists running the try block if there is an error however it will still run the code outside try and except block
+
 #else clause : Try and Excpet are the clauses that has else clause also 
 else runs when there is no error
 
